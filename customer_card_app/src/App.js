@@ -8,20 +8,29 @@ class App extends Component {
     super();
 
     this.state = {
-      customers: []
+      customers: [],
+      searchField: ''
     };
   }
 
+
   componentDidMount() {
+    //api call
     fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => response.json())
     .then(users => this.setState({customers: users}))
   }
 
   render() {
+    const { customers, searchField } = this.state;
+    // const customers = this.state.customers;
+    // const searchField = this.state.searchField;
+    const filteredCustomers = customers.filter(customer =>
+      customer.name.toLowerCase().includes(searchField.toLowerCase()))
     return (
       <div className="App">
-        <CardList customers = {this.state.customers} />
+        <input type="search" placeholder="Search a customer.." onChange={e => this.setState({searchField: e.target.value})}/>
+        <CardList customers = {filteredCustomers} />
       </div>
     );
   }
