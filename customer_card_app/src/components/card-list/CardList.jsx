@@ -2,7 +2,7 @@ import React from 'react';
 import './card-list.styles.css';
 import Card from '../card/Card.jsx';
 
-const CardList = props => (
+export const CardList = props => (
 
   <div className='card-list'>
     {props.customers.map(customer => (
@@ -11,4 +11,4 @@ const CardList = props => (
   </div>
 );
 
-export default CardList;
+// export default CardList;

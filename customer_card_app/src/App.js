@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import CardList from './components/card-list/CardList.jsx';
+import { CardList } from './components/card-list/CardList.jsx';
+import { SearchBox } from './components/search-box/SearchBox.jsx';
 
 
 class App extends Component {
@@ -11,8 +12,8 @@ class App extends Component {
       customers: [],
       searchField: ''
     };
+    // this.handleChange = this.handleChange.bind(this);
   }
-
 
   componentDidMount() {
     //api call
@@ -21,20 +22,25 @@ class App extends Component {
     .then(users => this.setState({customers: users}))
   }
 
+  handleChange = (e) => {
+    this.setState({ searchField: e.target.value })
+  }
+
   render() {
     const { customers, searchField } = this.state;
-    // const customers = this.state.customers;
-    // const searchField = this.state.searchField;
     const filteredCustomers = customers.filter(customer =>
       customer.name.toLowerCase().includes(searchField.toLowerCase()))
+
     return (
       <div className="App">
-        <input type="search" placeholder="Search a customer.." onChange={e => this.setState({searchField: e.target.value})}/>
+        <h1>Customer Search System</h1>
+        <SearchBox
+          placeholder='Search a customer...'
+          handleChange={this.handleChange}/>
         <CardList customers = {filteredCustomers} />
       </div>
     );
   }
 }
-
 
 export default App;
