@@ -1,4 +1,4 @@
-## Customer Card Search App
+## Customer Search App
 
 ## Available Scripts
 
