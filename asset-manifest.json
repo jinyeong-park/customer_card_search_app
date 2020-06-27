@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/customer_card_search_app/static/css/main.77649fd1.chunk.css",
+    "main.js": "/customer_card_search_app/static/js/main.d70b3c19.chunk.js",
+    "main.js.map": "/customer_card_search_app/static/js/main.d70b3c19.chunk.js.map",
+    "runtime-main.js": "/customer_card_search_app/static/js/runtime-main.ac59e8d3.js",
+    "runtime-main.js.map": "/customer_card_search_app/static/js/runtime-main.ac59e8d3.js.map",
+    "static/js/2.9bc86b1d.chunk.js": "/customer_card_search_app/static/js/2.9bc86b1d.chunk.js",
+    "static/js/2.9bc86b1d.chunk.js.map": "/customer_card_search_app/static/js/2.9bc86b1d.chunk.js.map",
+    "index.html": "/customer_card_search_app/index.html",
+    "precache-manifest.b4b84b54ad1593102c826399adba6819.js": "/customer_card_search_app/precache-manifest.b4b84b54ad1593102c826399adba6819.js",
+    "service-worker.js": "/customer_card_search_app/service-worker.js",
+    "static/css/main.77649fd1.chunk.css.map": "/customer_card_search_app/static/css/main.77649fd1.chunk.css.map",
+    "static/js/2.9bc86b1d.chunk.js.LICENSE.txt": "/customer_card_search_app/static/js/2.9bc86b1d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ac59e8d3.js",
+    "static/js/2.9bc86b1d.chunk.js",
+    "static/css/main.77649fd1.chunk.css",
+    "static/js/main.d70b3c19.chunk.js"
+  ]
+}
